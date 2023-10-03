@@ -126,7 +126,7 @@ void print_Recpict(productType product[]) {
 
     for (int i = 0; i < 6; i++) {
         if(product[i].Total() == 0) {
-            break;
+            continue;
         } else {
             std::cout
                 << std::setfill(' ') 

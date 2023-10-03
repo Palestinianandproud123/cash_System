@@ -62,8 +62,10 @@ int main() {
             } else {
                 if (choice == 0) { 
                     print_Recpict(product);
-                    std::cout << "Total cost = "   << std::setfill(' ') << std::setw(100) << std::left << total    << "\n";
-                    std::cout                      << std::setfill('=') << std::setw(100) << std::left << null_ver << "\n";
+                    std::cout << "Total cost = "   
+                              << std::setfill(' ') << std::setw(100) << std::left << total    << "\n"
+                              << std::setfill('=') << std::setw(100) << std::left << null_ver << "\n";
+
                     std::cout << "Have a nice day! Thank you for visiting us." << std::endl;
                 } else {
                     std::cout << "You entered an incorrect value. Please enter a correct one.\n";
@@ -136,8 +138,7 @@ void print_Recpict(productType product[]) {
 
                 << std::setw(21)     << std::left << product[i].Total() << "\n"
                 << std::setw(100)    << std::right << std::setfill('=') << " " << "\n";
-        } 
+                               
     }
+ }
 }
-
-
